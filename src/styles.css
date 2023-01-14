@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  overscroll-behavior: none;
+  background: #ff5959;
+  font-weight: 700;
+  color: white;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+}
+
+.btn-group {
+  position: fixed;
+  top: 2vh;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+}
+.btn {
+  background: none;
+  border: none;
+  margin: 0.5rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 50rem;
+  border: 1px white solid;
+  color: white;
+  cursor: pointer;
+}
+
+.dummy-content {
+  font-size: calc(1rem + 5vw);
+  height: 97vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 2rem solid rgb(34, 34, 34);
+}
+
+.scroll-container {
+  position: fixed;
+  will-change: transform;
+  right: 0;
+  left: 0;
+}
